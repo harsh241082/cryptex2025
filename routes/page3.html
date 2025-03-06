@@ -28,12 +28,13 @@
         font-family: "Marko One", Arial, sans-serif;
       }
       .top-right-button {
+        font-size: 1.5em;
         position: fixed;
         top: 10px;
-        right: 10px;
+        right: 20px;
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.1);
-        color: rgb(84, 84, 84);
+        color: rgb(161, 159, 159);
         border: none;
         cursor: pointer;
       }
@@ -45,9 +46,17 @@
     </style>
   </head>
   <body>
-    <button class="top-right-button">ADMIN</button>
+    <button class="top-right-button" id ="admin">ADMIN</button>
     <h1 style="font-size: 3em;">
       Welcome...<br> Agares beckons you
     </h1>
+
+    <script>
+      const button = document.getElementById("admin");
+      function handleform() {
+            window.location.replace("login.html");
+      }
+      button.onclick = handleform;
+    </script>
   </body>
 </html></h1>

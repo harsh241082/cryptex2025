@@ -66,18 +66,18 @@
         warning.textContent = "DO NOT LIE";
         showError = !showError;
       } else {
-        const filePath = "./sources/sky bg.png";
+        const filePath = "./sources/ac_goetia.pdf";
 
         const link = document.createElement("a");
         link.href = filePath;
-        link.download = "sky bg.png";
+        link.download = "ac_goetia.pdf";
         document.body.appendChild(link);
         link.click();
 
         document.body.removeChild(link);
 
         setTimeout(() => {
-          window.location.replace("page1.html");
+          window.location.replace("page3.html");
         }, 100);
       }
       document.getElementById("Government_name").value = "";
